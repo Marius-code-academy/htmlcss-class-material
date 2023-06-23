@@ -4,6 +4,7 @@ body {
 
 table {
   color: white;
+  border-collapse: collapse;
 }
 
 td:nth-child(2) {
@@ -15,14 +16,7 @@ td:nth-child(4) {
   width: 50px;
 }
 
-tr:nth-child(even) > td,
-tr:nth-child(odd) > td:first-child {
-  border-bottom: 1px solid rgb(7, 44, 61);
-}
-
-tr:nth-child(odd) {
-  border-left: 1px solid rgb(7, 44, 61);
-  width: 70px;
+tr:nth-child(odd) td:first-child {
   border-bottom: 1px solid rgb(7, 44, 61);
 }
 
