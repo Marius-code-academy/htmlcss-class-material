@@ -1,0 +1,89 @@
+:root {
+  --main-color: #645cff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.violet-text {
+  color: var(--main-color);
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  font-size: 1.3rem;
+}
+
+header h1 {
+  max-width: 40%;
+  font-family: "Poppins", sans-serif;
+}
+
+header > nav {
+  display: none;
+}
+
+header > nav > a {
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.image-container {
+  width: 50%;
+  border: 7px solid var(--main-color);
+  line-height: 0;
+}
+
+.image-container > img {
+  position: relative;
+  width: 100%;
+  transform: translate(10px, 10px);
+}
+
+.sign-up-container {
+  margin-top: 2rem;
+  background-color: var(--main-color);
+  color: white;
+  display: flex;
+}
+
+.sign-up-container > :first-child,
+.sign-up-container > :last-child {
+  flex-basis: 50%;
+}
+
+.sign-up-container > :last-child {
+  display: flex;
+  align-items: center;
+  overflow: scroll;
+}
+
+.sign-up-container > :last-child > button {
+  border: none;
+  background-color: white;
+  flex: 1 1 auto;
+  /* overflow: hidden; */
+}
+
+.sign-up-container > :last-child > input {
+  flex: 1 1 auto;
+  border: none;
+  /* overflow: hidden; */
+}
+
+@media screen and (min-width: 1200px) {
+  header > nav {
+    display: block;
+  }
+
+  .image-container {
+    border: none;
+  }
+}
