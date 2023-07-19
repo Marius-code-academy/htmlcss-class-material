@@ -1,0 +1,45 @@
+body {
+  background-color: rgb(209, 209, 209);
+}
+body > .container {
+  width: 80%;
+  margin: auto;
+}
+body > .container > img {
+  width: 100px;
+}
+body > .container nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px black;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+body > .container nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100px 200px;
+  gap: 2rem;
+  margin-top: 15px;
+}
+.grid-container > div {
+  background-color: white;
+  box-shadow: 3px 3px 5px black;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+  }
+}/*# sourceMappingURL=index.css.map */
